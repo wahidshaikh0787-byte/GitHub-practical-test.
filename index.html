@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wahid Shaikh — Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="wrapper">
+        <!-- About Section -->
+        <section id="about" class="section">
+            <p class="eyebrow">Portfolio</p>
+            <h1>Wahid Shaikh</h1>
+            <p class="lead">Web developer and student focused on building clean, accessible web interfaces and learning modern software technologies.</p>
+            <div class="quick-meta">
+                <span>Location: India</span>
+                <span>Focus: Front-End &amp; Git Workflow</span>
+                <span>Status: Available for projects</span>
+            </div>
+            <button id="greet-btn" class="btn">Say Hello</button>
+            <p id="greeting-text" class="greeting-text"></p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Git &amp; GitHub</li>
+                <li>Python</li>
+                <li>Responsive Design</li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="projects-list">
+                <article class="project-item">
+                    <div class="project-meta">
+                        <h3>Personal Portfolio</h3>
+                        <span class="year">2026</span>
+                    </div>
+                    <p>Minimalist single-page responsive portfolio built with semantic HTML, modern CSS, and vanilla JavaScript.</p>
+                    <p class="tech-stack">HTML / CSS / JavaScript / Git</p>
+                </article>
+
+                <article class="project-item">
+                    <div class="project-meta">
+                        <h3>Weather Application</h3>
+                        <span class="year">2026</span>
+                    </div>
+                    <p>Clean dashboard fetching real-time weather and forecast data from a REST API.</p>
+                    <p class="tech-stack">JavaScript / REST API / CSS</p>
+                </article>
+
+                <article class="project-item">
+                    <div class="project-meta">
+                        <h3>Task Tracker</h3>
+                        <span class="year">2026</span>
+                    </div>
+                    <p>Lightweight task management application with local storage persistence and status filters.</p>
+                    <p class="tech-stack">JavaScript / LocalStorage</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p class="contact-desc">Have a question or want to work together? Send a message.</p>
+            <form id="contact-form" class="simple-form">
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required placeholder="Your name">
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required placeholder="your.email@example.com">
+                </div>
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="3" required placeholder="Write a short message..."></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+                <p id="form-status" class="form-status"></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
